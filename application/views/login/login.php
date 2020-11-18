@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="png/image" href="\Logo_SHS.png">
+  
   <title>Web Gudang | Login</title>
   <img src="shs.png" width="20%" height="20%" style="display: block; margin: auto;">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -19,7 +19,7 @@
       body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  background: url("https://msg3organic.co.id/wp-content/uploads/2019/12/brang-biji...jpg") 50% fixed;
+  background: url("https://www.wallpapertip.com/wmimgs/65-657084_desain-background-brosur-keren-background-buku-warna-biru.jpg") 50% fixed;
   
   background-size: cover;
   backdrop-filter: blur(3px)

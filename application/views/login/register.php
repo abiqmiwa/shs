@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Gudang | Register </title>
+  
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,10 +17,13 @@
       <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
       body {
-  font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", sans-serif;
   height: 100vh;
-  background: url("https://i.imgur.com/HgflTDf.jpg") 50% fixed;
+  background: url("https://www.wallpapertip.com/wmimgs/65-657084_desain-background-brosur-keren-background-buku-warna-biru.jpg") 50% fixed;
+  
   background-size: cover;
+  backdrop-filter: blur(4px)
+  
 }
 
 @keyframes spinner {
@@ -42,7 +46,7 @@
   width: 100%;
   min-height: 100%;
   padding: 20px;
-  background: rgba(4, 40, 68, 0.85);
+  background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
 }
 
 .login {
@@ -50,7 +54,7 @@
   padding: 10px 20px 20px 20px;
   width: 90%;
   max-width: 320px;
-  background: #ffffff;
+  background: #dcdcdc;
   position: relative;
   padding-bottom: 80px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);

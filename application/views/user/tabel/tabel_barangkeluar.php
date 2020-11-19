@@ -11,10 +11,12 @@
         <th>Tanggal Masuk</th>
         <th>Tanggal Keluar</th>
         <th>Gudang</th>
+        <th>Nomor Lot</th>
         <th>Nama Penerima</th>
         <th>Nama Barang</th>
         <th>Satuan</th>
         <th>Jumlah</th>
+        <th>Keterangan</th>
         <th>Invoice</th>
       </tr>
     </thead>
@@ -28,10 +30,12 @@
           <td><?=$dd->tanggal_masuk?></td>
           <td><?=$dd->tanggal_keluar?></td>
           <td><?=$dd->gudang?></td>
+          <td><?=$dd->no_lot?></td>
           <td><?=$dd->penerima?></td>
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->kode_barang?></td>
           <td><?=$dd->jumlah?></td>
+          <td><?=$dd->ket_keluar?></td>
           <td><a type="button" class="btn btn-danger btn-report"  href="<?=base_url('report/barangKeluar/'.$dd->id_transaksi.'/'.$dd->tanggal_keluar)?>" name="btn_report" style="margin:auto;"><i class="fa fa-file-text" aria-hidden="true"></i></a></td>
       </tr>
     <?php $no++; ?>

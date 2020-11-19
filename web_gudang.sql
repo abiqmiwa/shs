@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Nov 2020 pada 15.22
+-- Waktu pembuatan: 19 Nov 2020 pada 17.18
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.3.1
 
@@ -34,10 +34,12 @@ CREATE TABLE `tb_barang_keluar` (
   `tanggal_masuk` varchar(20) NOT NULL,
   `tanggal_keluar` varchar(20) NOT NULL,
   `gudang` varchar(100) NOT NULL,
+  `no_lot` varchar(100) NOT NULL,
   `kode_barang` varchar(100) NOT NULL,
   `nama_barang` varchar(100) NOT NULL,
   `penerima` varchar(50) NOT NULL,
-  `jumlah` varchar(10) NOT NULL
+  `jumlah` varchar(10) NOT NULL,
+  `ket_keluar` varchar(10000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -63,10 +65,12 @@ CREATE TABLE `tb_barang_masuk` (
   `id_transaksi` varchar(50) NOT NULL,
   `tanggal` varchar(20) NOT NULL,
   `gudang` varchar(100) NOT NULL,
+  `no_lot` varchar(100) NOT NULL,
   `kode_barang` varchar(100) NOT NULL,
   `nama_barang` varchar(100) NOT NULL,
   `pengirim` varchar(50) NOT NULL,
-  `jumlah` varchar(10) NOT NULL
+  `jumlah` varchar(10) NOT NULL,
+  `ket_masuk` varchar(10000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -99,7 +103,7 @@ CREATE TABLE `tb_upload_gambar_user` (
 --
 
 INSERT INTO `tb_upload_gambar_user` (`id`, `username_user`, `nama_file`, `ukuran_file`) VALUES
-(4, 'admin', 'nopic2.png', '6.33'),
+(4, 'admin', 'logo.png', '111.98'),
 (5, 'abiq', 'nopic2.png', '6.33');
 
 -- --------------------------------------------------------
@@ -122,8 +126,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`, `last_login`) VALUES
-(20, 'admin', 'admin@gmail.com', '$2y$10$3HNkMOtwX8X88Xb3DIveYuhXScTnJ9m16/rPDF1/VTa/VTisxVZ4i', 1, '18-11-2020 14:12'),
-(22, 'abiq', 'bartaq1@gmail.com', '$2y$10$m5ub8Rln6Lza/mS5TuZln.vkuELTHuX6ZAqhKdpj0P1XNG2s3dkpy', 0, '18-11-2020 5:47');
+(20, 'admin', 'admin@gmail.com', '$2y$10$3HNkMOtwX8X88Xb3DIveYuhXScTnJ9m16/rPDF1/VTa/VTisxVZ4i', 1, '19-11-2020 16:16'),
+(22, 'abiq', 'bartaq1@gmail.com', '$2y$10$m5ub8Rln6Lza/mS5TuZln.vkuELTHuX6ZAqhKdpj0P1XNG2s3dkpy', 0, '19-11-2020 17:07');
 
 --
 -- Indexes for dumped tables
@@ -167,13 +171,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `tb_barang_keluar`
 --
 ALTER TABLE `tb_barang_keluar`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_satuan`
 --
 ALTER TABLE `tb_satuan`
-  MODIFY `id_satuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_satuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_upload_gambar_user`

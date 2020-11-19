@@ -221,6 +221,10 @@
                     <option value="4">4</option>
                   </select>
                 </div>
+                <div class="form-group" style="margin-bottom:40px;">
+                  <label for="no_lot" style="margin-left:220px;display:inline;">Nomor Lot</label>
+                  <input type="text" name="no_lot" style="margin-left:75px;width:20%;display:inline;" class="form-control" id="no_lot" placeholder="Nomor Lot">
+                </div>
                 <div class="form-group" style="display:inline-block;">
                   <label for="nama_Barang" style="width:73%;">Nama Barang</label>
                   <select class="form-control" name="nama_barang" style="width:90%;margin-right: 67px;" class="form-control" id="nama_Barang">
@@ -246,6 +250,10 @@
                 <label for="jumlah" style="width:73%;margin-left:33px;">Jumlah</label>
                 <input type="number" name="jumlah" style="width:41%;margin-left:34px;margin-right:18px;" class="form-control" id="jumlah">
             </div>
+            <div class="form-group" style="margin-bottom:40px;">
+                  <label for="ket_masuk" style="margin-left:220px;display:inline;">Keterangan</label>
+                  <input type="text" name="key_masuk" style="margin-left:75px;width:20%;display:inline;" class="form-control" id="ket_masuk" placeholder="Keterangan">
+                </div>
             <?php } ?>
               <!-- /.box-body -->
 

@@ -213,6 +213,7 @@
                   <th>Tanggal Masuk</th>
                   <th>Tanggal Keluar</th>
                   <th>Gudang</th>
+                  <th>Nomor Lot</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
                   <th>Nama Penerima</th>
@@ -232,6 +233,7 @@
                     <td><?=$dd->tanggal_masuk?></td>
                     <td><?=$dd->tanggal_keluar?></td>
                     <td><?=$dd->gudang?></td>
+                    <td><?=$dd->no_lot?></td>
                     <td><?=$dd->nama_barang?></td>
                     <td><?=$dd->kode_barang?></td>
                     <td><?=$dd->penerima?></td>
@@ -254,6 +256,7 @@
                   <th>Tanggal Masuk</th>
                   <th>Tanggal Keluar</th>
                   <th>Gudang</th>
+                  <th>Nomor Lot</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
                   <th>Nama Penerima</th>

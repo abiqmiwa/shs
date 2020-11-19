@@ -216,6 +216,7 @@
                   <th>ID_Transaksi</th>
                   <th>Tanggal</th>
                   <th>Gudang</th>
+                  <th>Nomor Lot</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
                   <th>Nama Pengirim</th>
@@ -234,6 +235,7 @@
                     <td><?=$dd->id_transaksi?></td>
                     <td><?=$dd->tanggal?></td>
                     <td><?=$dd->gudang?></td>
+                    <td><?=$dd->no_lot?></td>
                     <td><?=$dd->nama_barang?></td>
                     <td><?=$dd->kode_barang?></td>
                     <td><?=$dd->pengirim?></td>
@@ -254,6 +256,7 @@
                   <th>ID_transaksi</th>
                   <th>Tanggal</th>
                   <th>Gudang</th>
+                  <th>Nomor Lot</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
                   <th>Nama Pengirim</th>

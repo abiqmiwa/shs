@@ -308,19 +308,23 @@ public function delete_barang1($id_transaksi)
       $id_transaksi = $this->input->post('id_transaksi',TRUE);
       $tanggal      = $this->input->post('tanggal',TRUE);
       $gudang       = $this->input->post('gudang',TRUE);    
+      $no_lot       = $this->input->post('no_lot',TRUE);
       $nama_barang  = $this->input->post('nama_barang',TRUE);
       $pengirim  = $this->input->post('pengirim',TRUE);
       $kode_barang       = $this->input->post('kode_barang',TRUE);
       $jumlah       = $this->input->post('jumlah',TRUE);
+      $ket_masuk    = $this->input->post('ket_masuk',TRUE);
 
       $data = array(
             'id_transaksi' => $id_transaksi,
             'tanggal'      => $tanggal,
             'gudang'       => $gudang,
+            'no_lot'       => $no_lot,
             'nama_barang'  => $nama_barang,
             'pengirim'  => $pengirim,
             'kode_barang'       => $kode_barang,
-            'jumlah'       => $jumlah
+            'jumlah'       => $jumlah,
+            'ket_masuk'    => $ket_masuk
       );
       $this->M_admin->insert('tb_barang_masuk',$data);
 
@@ -343,21 +347,24 @@ public function delete_barang1($id_transaksi)
     {
       $id_transaksi = $this->input->post('id_transaksi',TRUE);
       $tanggal      = $this->input->post('tanggal',TRUE);
-      $gudang       = $this->input->post('gudang',TRUE);
+      $gudang       = $this->input->post('gudang',TRUE);    
+      $no_lot       = $this->input->post('no_lot',TRUE);
       $nama_barang  = $this->input->post('nama_barang',TRUE);
       $pengirim  = $this->input->post('pengirim',TRUE);
       $kode_barang       = $this->input->post('kode_barang',TRUE);
       $jumlah       = $this->input->post('jumlah',TRUE);
+      $ket_masuk    = $this->input->post('ket_masuk',TRUE);
 
-      $where = array('id_transaksi' => $id_transaksi);
       $data = array(
             'id_transaksi' => $id_transaksi,
             'tanggal'      => $tanggal,
             'gudang'       => $gudang,
+            'no_lot'       => $no_lot,
             'nama_barang'  => $nama_barang,
             'pengirim'  => $pengirim,
             'kode_barang'       => $kode_barang,
-            'jumlah'       => $jumlah
+            'jumlah'       => $jumlah,
+            'ket_masuk'    => $ket_masuk
       );
       $this->M_admin->update('tb_barang_masuk',$data,$where);
       $this->session->set_flashdata('msg_berhasil','Data Barang Berhasil Diupdate');
@@ -484,10 +491,12 @@ public function delete_barang1($id_transaksi)
       $tanggal_masuk  = $this->input->post('tanggal',TRUE);
       $tanggal_keluar = $this->input->post('tanggal_keluar',TRUE);
       $gudang         = $this->input->post('gudang',TRUE);
+      $no_lot       = $this->input->post('no_lot',TRUE);
       $nama_barang    = $this->input->post('nama_barang',TRUE);
       $penerima    = $this->input->post('penerima',TRUE);
       $kode_barang         = $this->input->post('kode_barang',TRUE);
       $jumlah         = $this->input->post('jumlah',TRUE);
+      $ket_keluar       = $this->input->post('ket_keluar',TRUE);
 
       $where = array( 'id_transaksi' => $id_transaksi);
       $data = array(
@@ -495,10 +504,13 @@ public function delete_barang1($id_transaksi)
               'tanggal_masuk' => $tanggal_masuk,
               'tanggal_keluar' => $tanggal_keluar,
               'gudang' => $gudang,
+              'no_lot' => $no_lot,
               'nama_barang' => $nama_barang,
               'penerima' => $penerima,
               'kode_barang' => $kode_barang,
-              'jumlah' => $jumlah
+              'jumlah' => $jumlah,
+              'ket_keluar'  => $ket_keluar
+
       );
         $this->M_admin->insert('tb_barang_keluar',$data);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');

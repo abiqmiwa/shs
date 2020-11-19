@@ -219,9 +219,12 @@
                   <label for="gudang" style="margin-left:220px;display:inline;">Gudang</label>
                   <input type="text" name="gudang" style="margin-left:117px;width:20%;display:inline;" class="form-control" readonly="readonly" value="<?=$d->gudang?>">
                 </div>
-                
+                <div class="form-group" style="margin-bottom:40px;">
+                  <label for="no_lot" style="margin-left:220px;display:inline;">Nomor Lot</label>
+                  <input type="text" name="no_lot" style="margin-left:75px;width:20%;display:inline;" class="form-control" readonly="readonly" value="<?=$d->no_lot?>">
+                </div>
                 <div class="form-group" style="display:inline-block;">
-                  <label for="nama_Barang" style="width:73%;">Nama Barang</label>
+                  <label for="nama_barang" style="width:73%;">Nama Barang</label>
                   <input type="text" name="nama_barang" readonly="readonly" style="width:90%;margin-right: 67px;" class="form-control" id="nama_Barang" value="<?=$d->nama_barang?>">
               </div>
               <div class="form-group" style="display:inline-block;">
@@ -238,6 +241,10 @@
                 <label for="jumlah" style="width:73%;margin-left:33px;">Jumlah</label>
                 <input type="number" name="jumlah" style="width:41%;margin-left:34px;margin-right:18px;" class="form-control" id="jumlah" max="<?=$d->jumlah?>" value="<?=$d->jumlah?>">
             </div>
+            <div class="form-group" style="margin-bottom:40px;">
+                  <label for="ket_keluar" style="margin-left:220px;display:inline;">Keterangan</label>
+                  <input type="text" name="key_keluar" style="margin-left:75px;width:20%;display:inline;" class="form-control" id="ket_keluar" placeholder="Keterangan">
+                </div>
             <?php } ?>
               <!-- /.box-body -->
 
